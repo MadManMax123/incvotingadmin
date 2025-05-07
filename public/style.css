@@ -1,0 +1,94 @@
+body {
+    background-color: #0b0f2a;
+    color: #00ffe7;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Add a fade-in animation for the container */
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+          transform: scale(0.9);
+      }
+      to {
+          opacity: 1;
+          transform: scale(1);
+      }
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 500px;
+    background: #12163c;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ffe7;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #00ffe7;
+  }
+  
+  label {
+    margin-top: 1rem;
+    display: block;
+    font-weight: bold;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: none;
+    border-radius: 6px;
+    background: #0e1330;
+    color: #00ffe7;
+    outline: none;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    color: #a2ffe7;
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #00ffe7;
+    color: #0b0f2a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00e0ce;
+  }
+  
+  /* Add a button click animation */
+  @keyframes buttonClick {
+      0% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(0.95);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+  
+  button:active {
+      animation: buttonClick 0.2s ease-in-out;
+  }
